@@ -1,0 +1,28 @@
+body {
+  background-color: rgb(240, 255, 254);
+}
+
+.cv {
+  background-color: bisque;
+  width: 1000px;
+  max-width: 100%;
+  margin: auto;
+  padding: 50px;
+  box-shadow: 0 10px 50px; /* ben phải 0 ben duoi 10 do nhoe 50 */
+  display: grid; /* de chia 2 man hinh ta phai sử dụng thẻ display
+    /*text-align: center;*/
+  grid-template-columns: 35% 60%; /* chia chot 35% va 65%*/
+  column-gap: 5%; /*khoang cach gia cac cot*/
+  row-gap: 30px; /* khoang cach giua cac dong*/
+
+  .avatar img {
+    width: 200px;
+    height: 200px;
+    border-radius: 50%; /* bo tron lại*/
+    object-fit: cover; /* tranh tam hinh ko bị vỡ khi kéo ra kéo vào */
+  }
+  .name {
+    padding-left: 30px;
+    border-left: 1px solid;
+  }
+}
